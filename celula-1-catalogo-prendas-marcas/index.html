@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Célula 1 · Catálogo de Prendas y Marcas</title>
+    <link rel="stylesheet" href="../assets/css/armario-digital.css">
+    <link rel="stylesheet" href="css/celula-1.css">
+  </head>
+  <body class="celula-1-body">
+    <div id="barra-nav"></div>
+    <main class="contenedor">
+      <section class="tarjeta">
+        <h1>Célula 1 · Catálogo de Prendas y Marcas</h1>
+        <form id="celula-1-formulario">
+          <div class="fila-formulario">
+            <label>Marca<input name="marca" class="campo" required></label>
+            <label>Prenda<input name="nombrePrenda" class="campo" required></label>
+            <label>Colección<input name="coleccion" class="campo" required></label>
+            <label>Estado<select name="activo" class="campo"><option value="true">Activa</option><option value="false">Inactiva</option></select></label>
+          </div>
+          <button class="boton boton-primario" type="submit">Crear registro</button>
+        </form>
+      </section>
+      <section id="celula-1-listado" class="rejilla-celulas" aria-live="polite"></section>
+    </main>
+
+    <script src="../data/usuarios_autenticacion.js"></script>
+    <script src="../data/catalogo_prendas_marcas.js"></script>
+    <script src="../data/creador_outfits.js"></script>
+    <script src="../data/armario_matching.js"></script>
+    <script src="../data/asesoria_imagen_clima.js"></script>
+    <script src="../data/planificador_wishlist.js"></script>
+    <script src="../data/comunidad_lookbook_social.js"></script>
+    <script src="../data/mercadeo_fidelizacion.js"></script>
+    <script src="../services/api.config.js"></script>
+    <script src="../services/modulos.servicio.js"></script>
+    <script src="../assets/js/utilidades.js"></script>
+    <script src="../assets/js/layout.js"></script>
+    <script src="js/celula-1.js"></script>
+  </body>
+</html>
+
